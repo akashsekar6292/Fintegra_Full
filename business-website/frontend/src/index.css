@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6bd8cb;
+  --color-on-error-container: #ffdad6;
+  --color-outline: #879391;
+  --color-surface: #041329;
+  --color-tertiary: #68dba9;
+  --color-surface-bright: #2c3951;
+  --color-error: #ffb4ab;
+  --color-surface-dim: #041329;
+  --color-surface-container-lowest: #010e24;
+  --color-error-container: #93000a;
+  --color-primary-container: #29a195;
+  --color-inverse-primary: #006a61;
+  --color-on-secondary: #4d2600;
+  --color-primary-fixed: #89f5e7;
+  --color-tertiary-container: #25a475;
+  --color-on-primary: #003732;
+  --color-secondary-fixed: #ffdcc3;
+  --color-inverse-surface: #d6e3ff;
+  --color-background: #041329;
+  --color-primary-fixed-dim: #6bd8cb;
+  --color-surface-tint: #6bd8cb;
+  --color-on-tertiary-container: #00311f;
+  --color-on-secondary-container: #432100;
+  --color-inverse-on-surface: #233148;
+  --color-on-tertiary-fixed: #002114;
+  --color-on-secondary-fixed-variant: #6e3900;
+  --color-on-primary-container: #00302b;
+  --color-secondary-fixed-dim: #ffb77d;
+  --color-surface-container: #112036;
+  --color-on-tertiary-fixed-variant: #005137;
+  --color-on-surface-variant: #bcc9c6;
+  --color-tertiary-fixed-dim: #68dba9;
+  --color-surface-container-highest: #27354c;
+  --color-on-secondary-fixed: #2f1500;
+  --color-outline-variant: #3d4947;
+  --color-on-error: #690005;
+  --color-surface-variant: #27354c;
+  --color-on-primary-fixed-variant: #005049;
+  --color-surface-container-low: #0d1c32;
+  --color-surface-container-high: #1c2a41;
+  --color-on-primary-fixed: #00201d;
+  --color-tertiary-fixed: #85f8c4;
+  --color-secondary: #ffb77d;
+  --color-on-tertiary: #003825;
+  --color-on-surface: #d6e3ff;
+  --color-on-background: #d6e3ff;
+  --color-secondary-container: #d97707;
+
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-margin-tablet: 2rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-margin: 4rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-3xl: 6rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-lg: 1.5rem;
+
+  --font-display: "Newsreader", ui-serif, Georgia, serif;
+  --font-headline: "Newsreader", ui-serif, Georgia, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-caption: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --text-caption: 0.6875rem;
+  --text-caption--line-height: 0.95rem;
+  --text-caption--letter-spacing: 0.04em;
+  --text-caption--font-weight: 500;
+
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.6rem;
+  --text-body-md--letter-spacing: 0em;
+  --text-body-md--font-weight: 400;
+
+  --text-display: 3.75rem;
+  --text-display--line-height: 4.25rem;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 400;
+
+  --text-headline-lg: 2.75rem;
+  --text-headline-lg--line-height: 3.25rem;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 500;
+
+  --text-label-lg: 0.875rem;
+  --text-label-lg--line-height: 1.25rem;
+  --text-label-lg--letter-spacing: 0.02em;
+  --text-label-lg--font-weight: 600;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.75rem;
+  --text-body-lg--letter-spacing: 0em;
+  --text-body-lg--font-weight: 400;
+
+  --text-display-mobile: 2.5rem;
+  --text-display-mobile--line-height: 3rem;
+  --text-display-mobile--letter-spacing: -0.015em;
+  --text-display-mobile--font-weight: 400;
+
+  --text-headline-lg-mobile: 2rem;
+  --text-headline-lg-mobile--line-height: 2.5rem;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 500;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.4rem;
+  --text-body-sm--letter-spacing: 0.01em;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-md: 0.75rem;
+  --text-label-md--line-height: 1rem;
+  --text-label-md--letter-spacing: 0.06em;
+  --text-label-md--font-weight: 600;
+
+  --text-headline-sm: 1.375rem;
+  --text-headline-sm--line-height: 1.875rem;
+  --text-headline-sm--letter-spacing: -0.01em;
+  --text-headline-sm--font-weight: 600;
+
+  --text-headline-md: 2rem;
+  --text-headline-md--line-height: 2.5rem;
+  --text-headline-md--letter-spacing: -0.015em;
+  --text-headline-md--font-weight: 500;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+
+  body {
+    overscroll-behavior: none;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.material-symbols-outlined.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+@media (max-width: 1023px) {
+  .text-display {
+    font-size: var(--text-display-mobile);
+    line-height: var(--text-display-mobile--line-height);
+  }
+
+  .text-headline-lg {
+    font-size: var(--text-headline-lg-mobile);
+    line-height: var(--text-headline-lg-mobile--line-height);
+  }
+}

@@ -1,0 +1,16 @@
+# Secrets / credentials — never commit
+.env
+.env.*
+!.env.example
+**/*credentials*
+**/*.pem
+**/*.key
+**/*-secrets.properties
+**/*.local.properties
+
+# Common build/deps
+node_modules/
+dist/
+target/
+*.log
+.DS_Store
